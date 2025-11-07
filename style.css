@@ -1,0 +1,72 @@
+
+body {
+  background-color: green;
+  background-image: url(./assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.audio-section h1 {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    width: 19%;
+    text-align: center;
+}
+
+.audio-section h1:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.video-section h1 {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    width: 19%;
+    text-align: center;
+}
+
+.video-section h1:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.img-table h1 {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    width: 19%;
+    text-align: center;
+}
+
+.img-table h1:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#myCanvas {
+  background-color: #002b2673;
+  border-radius: 25%;
+}
+
+#canvas-section h1 {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    width: 25%;
+    text-align: center;
+}
+
+#canvas-section h1:hover {
+    background-color: yellow;
+    color: black;
+}

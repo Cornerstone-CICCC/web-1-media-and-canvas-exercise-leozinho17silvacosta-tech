@@ -4,20 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Exercise</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="container">
-    <!-- AUDIO HTML GOES HERE -->
+    <div class="audio-section">
+      <h1>AUDIO SECTION</h1>
+    <audio controls muted loop>
+      <source src="./assets/audio/piano.wav" type="audio/mpeg">
+    </audio>
+    </div>
 
-    <!-- VIDEO HTML GOES HERE -->
+    <div class="video-section">
+      <h1>VIDEO SECTION</h1>
+      <video controls muted poster="./assets/images/poster.jpg">
+      <source src="./assets/video/ocean.mp4" type="video/mp4">
+    </video>
+    </div>
 
-    <!-- IMAGE MAP HTML GOES HERE-->
+    <div class="img-table">
+      <h1>IMG SECTION</h1>
+      <img src="./assets/images/fruit_table.jpg" width="600" usemap="#fruitmap">
+      <map name="fruitmap">
+        <area shape="rect" coords="270, 480, 70, 40" href="https://en.wikipedia.org/wiki/Lavandula" title="Lavender Flowers">
+        <area shape="rect" coords="400, 300, 600, 650" href="https://en.wikipedia.org/wiki/Orange_(fruit)" title="Oranges">
+        <area shape="circle" coords="440, 180, 85" href="https://en.wikipedia.org/wiki/Coffee" title="Cup of Coffee">
+      </map>
+    </div>
 
-    <!-- CANVAS HTML GOES HERE -->
-  </div>
+    <section id="canvas-section">
+      <h1>CANVAS SECTION</h2>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+    </section>
 
   <script>
-    /* CANVAS JAVASCRIPT GOES HERE */
+    const canvas = document.getElementById('myCanvas')
+    const context = canvas.getContext('2d')
+
+    context.beginPath();
+    context.moveTo(150, 150);
+    context.lineTo(354, 150);
+    context.strokeStyle = "red";
+    context.lineWidth = 8;
+    context.stroke();
+
+    context.beginPath()
+    context.moveTo(350, 154);
+    context.lineTo(350, 354);
+    context.strokeStyle = "blue";
+    context.lineWidth = 8;
+    context.stroke();
+
+    context.beginPath()
+    context.moveTo(346, 350);
+    context.lineTo(146, 350);
+    context.strokeStyle = "green";
+    context.lineWidth = 8;
+    context.stroke();
+        
+    context.beginPath()
+    context.moveTo(150, 346);
+    context.lineTo(150, 146);
+    context.strokeStyle = "yellow"; 
+    context.lineWidth = 8;
+    context.stroke();
   </script>
 </body>
 </html>
